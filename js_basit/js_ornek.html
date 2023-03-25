@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" class="t">
+    <button class="tikla">tıkla</button>
+    <p id="result"></p>
+
+    <script>
+        
+        const t = document.querySelector('.t');
+        const r = document.querySelector('#result');
+        const tikla = document.querySelector('.tikla');
+        const goster = () =>{
+            setTimeout(() => {
+                result.innerHTML = `${t.value}`
+            }, 9000)
+        }
+
+        tikla.addEventListener('click', goster);
+        
+    </script>
+    
+</body>
+</html>
